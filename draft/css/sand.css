@@ -2,14 +2,20 @@
   padding: 0;
   margin: 0;
 }
+.clear {
+  clear: both;
+}
 body {
   margin: 0px;
   padding: 0px;
   font-family: Roboto, Tahoma, Helvetica, Arial, "Microsoft YaHei", "黑体", '宋体', sans-serif, serif;
   font-size: 14px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   -webkit-text-size-adjust: none;
 }
+/*
+.todelete{display: none;}
+*/
 #content {
   position: relative;
   width: 100%;
@@ -20,4 +26,73 @@ body {
 }
 #content .container {
   position: relative;
+}
+/*沙盘*/
+#sandStory #frameComments {
+  padding: 8px;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+#sandStory #storyFrames {
+  width: 100%;
+  border: 1px dotted red;
+}
+#sandStory #storyFrames svg {
+  width: 100%;
+}
+#playBar .playBarBorder {
+  border: 4px solid #333;
+  background: #333;
+  border-radius: 8px;
+}
+#playBar .frameBox {
+  display: block;
+  padding: 4px;
+  margin: 0px;
+}
+#playBar .frameShot {
+  display: inline-block;
+  margin: 0px 4px;
+  border: 2px solid #fe8;
+}
+#playBar .frameShot img {
+  height: 88px;
+}
+#playBar .frameShot.highlight {
+  border: 2px solid orange;
+  box-shadow: -2px 0px 1px #ffcc33, 2px 0px 1px #ffcc33, 0px 2px 1px #ffcc33, 0px -2px 1px #ffcc33;
+}
+/*pawn 相关属性*/
+.pawn.blue .pawnBorder {
+  border: 1px solid blue;
+  background-color: blue;
+  box-shadow: 3px 5px 2px grey;
+}
+.pawn.red .pawnBorder {
+  border: 1px solid red;
+  background-color: red;
+  box-shadow: 3px 5px 2px grey;
+}
+.pawn.selected .pawnBorder {
+  border: 2px solid #6f3;
+  background-color: #f96;
+  box-shadow: 3px 5px 2px #cfc;
+}
+.pawn {
+  float: left;
+  cursor: pointer;
+}
+.pawn .pawnBorder {
+  border-radius: 64px;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+}
+.pawn .pawnBorder img {
+  width: 100%;
+  height: 100%;
+}
+/*Editor*/
+#editor {
+  margin-top: 20px;
 }

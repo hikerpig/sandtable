@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在线多人沙盘推演工具</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta keywords="沙盘推演" />
+	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/sand.css">
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./js/sand.js"></script>
+</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hero-voice-games" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			        <div class="collapse navbar-collapse" id="hero-voice-games">
+						<ul class="nav navbar-nav">
+							<li><a href="#">游戏沙盘</a></li>
+							<li><a href="http://ow.thnuclub.com">守望先锋 (Beta)</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">风暴英雄<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://hero.thnuclub.com">英雄语音</a></li>
+									<li><a class="disabled">风暴英雄地图集</a></li>
+									<li><a class="http://hero.thnuclub.com/heromu.html">风暴英雄音乐集</a></li>
+								</ul>
+							</li>
+							<li><a href="http://dota.thnuclub.com">Dota 2</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<style>.todelete p {margin:0;}</style>
+						<div class="todelete">
+							<p>//测试图片地址（全屏大图当背景图）：</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testframebg2.jpg</p>
+							<p>//测试图片地址（184x209 图标）：</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnb01.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnb02.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnb03.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnb04.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnr01.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnr02.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnr03.png</p>
+							<p>http://kaikaiiiiiii.github.io/sdsrc/testpawnr04.png</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="todelete" >
+							<p class="todelete">//棋子，通过添加不同的 class 代表自身状态，.selected .death. .red .blue 等</p>
+							<div id="pawngroup">
+								<div class="pawn blue" data-pawnid="b01">
+									<div class="pawnBorder">
+										<img src="http://kaikaiiiiiii.github.io/sdsrc/testpawnb01.png" />
+									</div>
+								</div>
+								<div class="pawn red" data-pawnid="r01">
+									<div class="pawnBorder">
+										<img src="http://kaikaiiiiiii.github.io/sdsrc/testpawnr01.png" />
+									</div>
+								</div>
+								<div class="pawn red selected" data-pawnid="r01">
+									<div class="pawnBorder">
+										<img src="http://kaikaiiiiiii.github.io/sdsrc/testpawnb02.png" />
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div id="sandOverview">
+							<h2 id="storyTitle">Lunatic-Hai 与 GC Busan 在艾兴瓦尔德 A 点团战 15 秒的详细解析</h2>
+							<p id="storyAuthur"><span class="sandLabel">作者：</span>kaikaiiiiiii</p>
+							<p id="storyAuthurInfo"><span class="sandLabel">信息：</span>http://bbs.ngacn.cc</p>
+						</div>
+						<div id="sandStory">
+							<div id="storyFrames">
+								<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  									<image href="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" height="100%" width="100%"/>    
+								</svg>
+							</div>
+							<p class="todelete">//FrameComments Here. 每帧都有自己的 Comment，两帧切换时该处文字也需要切换↓↓↓↓</p>
+							<div id="frameComments">
+								<p>C9KD故意把温斯顿卢西奥DVA放在桥上，做出安娜在二楼桥上的通道里藏着的假象，吸引温斯顿起跳，但是当Miro落地后会发现自己根本够不到安娜，即使向前追击，也有DJ的波推和加速做拉扯，安娜非常安全。同样的道理， 当闪光绕后到二楼的那一刻，她也会发现自己没有办法第一时间输出有效火力。</p>
+								<p>通过这样一个战术欺骗，让LH的狗交代掉了自己的位移技能，在一段时间内没有办法做出有效伤害，而且没有办法及时回援。而此时，就是 C9KD的反击了。</p>
+								<p>进攻剩余时间3分40秒，Fiseure的温斯顿双招仍在，满血起跳。</p>
+								<p>早就安排在二楼的闪光与温斯顿同时切入到LH后排，DVA则开启矩阵进行保护，源氏shift入场。同一时间，C9KD的四只狗全力开火。</p>
+							</div>
+							<div id="playBar">
+								<div class="playBarBorder">
+									<ul class="frameBox">
+										<li class="frameShot highlight"><img src="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" /></li>
+										<li class="frameShot"><img src="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" /></li>
+										<li class="frameShot"><img src="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" /></li>
+										<li class="frameShot"><img src="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" /></li>
+										<li class="frameShot"><img src="http://kaikaiiiiiii.github.io/sdsrc/testframebg.jpg" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="editor">
+							<p class="todelete">Editor here.</p>
+							<div class="toggleEditor">
+								<div class="btn btn-success"><span class="fa fa-pencil-square-o"></span> 修改沙盘</div>
+							</div>
+							<div id="editPanel">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<style type="text/css">
+					.text-muted{text-align:center;margin:4px;color:#333;}
+					#donate, #alipay{text-align: center;}
+					#alipay > img{width: 280px;}
+					</style>
+					<p class="text-muted">// Omni @DevliPig &amp; powerful @feifei &amp; talking @kaikai made this site.</p>
+				</div>
+			</footer>
+		</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75066032-3"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-75066032-3');</script>
+	</body>
+</html>
